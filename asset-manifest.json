@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/LoginRedux/static/css/main.b879dd5c.chunk.css",
-    "main.js": "/LoginRedux/static/js/main.026bf47b.chunk.js",
-    "main.js.map": "/LoginRedux/static/js/main.026bf47b.chunk.js.map",
+    "main.js": "/LoginRedux/static/js/main.cd3f6138.chunk.js",
+    "main.js.map": "/LoginRedux/static/js/main.cd3f6138.chunk.js.map",
     "runtime-main.js": "/LoginRedux/static/js/runtime-main.592cc673.js",
     "runtime-main.js.map": "/LoginRedux/static/js/runtime-main.592cc673.js.map",
-    "static/js/2.f961c221.chunk.js": "/LoginRedux/static/js/2.f961c221.chunk.js",
-    "static/js/2.f961c221.chunk.js.map": "/LoginRedux/static/js/2.f961c221.chunk.js.map",
+    "static/js/2.343fb1c1.chunk.js": "/LoginRedux/static/js/2.343fb1c1.chunk.js",
+    "static/js/2.343fb1c1.chunk.js.map": "/LoginRedux/static/js/2.343fb1c1.chunk.js.map",
     "index.html": "/LoginRedux/index.html",
     "static/css/main.b879dd5c.chunk.css.map": "/LoginRedux/static/css/main.b879dd5c.chunk.css.map",
-    "static/js/2.f961c221.chunk.js.LICENSE.txt": "/LoginRedux/static/js/2.f961c221.chunk.js.LICENSE.txt"
+    "static/js/2.343fb1c1.chunk.js.LICENSE.txt": "/LoginRedux/static/js/2.343fb1c1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.592cc673.js",
-    "static/js/2.f961c221.chunk.js",
+    "static/js/2.343fb1c1.chunk.js",
     "static/css/main.b879dd5c.chunk.css",
-    "static/js/main.026bf47b.chunk.js"
+    "static/js/main.cd3f6138.chunk.js"
   ]
 }
