@@ -14,7 +14,7 @@ export const LoginScreen = () => {
     // const { msjError } = useSelector(state => state.ui)
 
 
-    const [formValues, handleInputChange, reset] = useForm({
+    const [formValues, handleInputChange] = useForm({
         email: '',
         password: ''
     })
