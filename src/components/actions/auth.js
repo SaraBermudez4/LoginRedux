@@ -32,9 +32,9 @@ export const startRegisterWithEmailPassword = (email, password, name) => {
 export const startGoogleLoginPassword = () => {
     return (dispath) => {
         firebase.auth().signInWithPopup(googleAuthProvider)
-            .then(({ user }) => {
-                dispath(login(user.uid, user.displayName))
-                console.log(user);
+            .then(async({ user }) => {
+                await dispath(login(user.uid, user.displayName))
+                // console.log(user);
             }).catch(e => {
                 console.log(e);
             })
