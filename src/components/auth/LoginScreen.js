@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom'
 import { useForm } from '../../hooks/useForm'
 import { useDispatch, useSelector } from 'react-redux'
 import { startLoginEmailPassword, startGoogleLoginPassword } from '../actions/auth'
-import { setError, removeError } from '../actions/uiError';
-import Sweet from 'sweetalert2'
-import validator from 'validator';
+// import { setError, removeError } from '../actions/uiError';
+// import Sweet from 'sweetalert2'
+// import validator from 'validator';
 
 export const LoginScreen = () => {
 
     const dispatch = useDispatch()
     const loading = useSelector(state => state.uid);
-    const { msjError } = useSelector(state => state.ui)
+    // const { msjError } = useSelector(state => state.ui)
 
 
     const [formValues, handleInputChange, reset] = useForm({
@@ -21,37 +21,37 @@ export const LoginScreen = () => {
 
     const { email, password } = formValues;
 
-    const error = (error) => {
-        return (
-            Sweet.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: error,
-            })
-        )
-    }
+    // const error = (error) => {
+    //     return (
+    //         Sweet.fire({
+    //             icon: 'error',
+    //             title: 'Oops...',
+    //             text: error,
+    //         })
+    //     )
+    // }
 
-    const formValid = () => {
-        if (!validator.isEmail(email)) {
-            dispatch(setError('Email requerido'))
-            return false
-        }
-        else if (password < 5) {
-            dispatch(setError('La contraseña es incorecta'))
-            return false
-        }
+    // const formValid = () => {
+    //     if (!validator.isEmail(email)) {
+    //         dispatch(setError('Email requerido'))
+    //         return false
+    //     }
+    //     else if (password < 5) {
+    //         dispatch(setError('La contraseña es incorecta'))
+    //         return false
+    //     }
 
-        dispatch(removeError(''))
-        return true
-    }
+    //     dispatch(removeError(''))
+    //     return true
+    // }
 
     const handleLogin = (e) => {
         e.preventDefault();
-        error(msjError)
-        if (formValid()) {
-            reset()
+        // error(msjError)
+        // if (formValid()) {
+        //     reset()
             dispatch(startLoginEmailPassword(email, password))
-        }
+        // }
     }
 
     const handleGoogle = () => {
