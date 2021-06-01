@@ -15,7 +15,7 @@ export const loadNote = async (uid) => {
 
     });
 
-    console.log("FireStore", notes);
+    // console.log("FireStore", notes);
 
     return notes
 }

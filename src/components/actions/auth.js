@@ -2,7 +2,7 @@ import { types } from '../types/types'
 
 import { firebase, googleAuthProvider } from '../firebase/firebase-config'
 import { finishLoading, startLoading } from './uiError'
-
+import { noteLogout } from '../actions/notesAction'
 export const startLoginEmailPassword = (email, password) => {
     return (dispath) => {
         return firebase.auth().signInWithEmailAndPassword(email, password)
@@ -32,7 +32,7 @@ export const startRegisterWithEmailPassword = (email, password, name) => {
 export const startGoogleLoginPassword = () => {
     return (dispath) => {
         firebase.auth().signInWithPopup(googleAuthProvider)
-            .then(async({ user }) => {
+            .then(async ({ user }) => {
                 await dispath(login(user.uid, user.displayName))
                 // console.log(user);
             }).catch(e => {
@@ -54,7 +54,8 @@ export const login = (uid, displayName) => {
 export const startLogout = () => {
     return (dispath) => {
         firebase.auth().signOut()
-        dispath(logout(true))
+        dispath(logout())
+        dispath(noteLogout())
     }
 }
 

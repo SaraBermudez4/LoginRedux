@@ -16,7 +16,8 @@ export const authReducer = (state = {}, action) => {
                 name: action.payLoad.displayName
             }
         case types.logout:
-            return { }
+            return {
+            }
 
         default:
             return state

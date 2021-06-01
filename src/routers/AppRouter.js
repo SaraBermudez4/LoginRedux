@@ -12,8 +12,8 @@ import { firebase } from '../components/firebase/firebase-config'
 import { login } from '../components/actions/auth';
 import { PublicRouter } from './PublicRouter';
 import { PrivateRouter } from './PrivateRouter';
-import { loadNote } from '../components/reducers/helpers/loadNote';
-import { setNote, startLoadingNote } from '../components/actions/notesAction';
+// import { loadNote } from '../components/reducers/helpers/loadNote';
+import { startLoadingNote } from '../components/actions/notesAction';
 
 export const AppRouter = () => {
 
