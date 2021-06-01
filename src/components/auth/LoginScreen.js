@@ -10,7 +10,7 @@ import { startLoginEmailPassword, startGoogleLoginPassword } from '../actions/au
 export const LoginScreen = () => {
 
     const dispatch = useDispatch()
-    const loading = useSelector(state => state.uid);
+    const loading = useSelector(state => state.ui);
     // const { msjError } = useSelector(state => state.ui)
 
 
@@ -86,7 +86,7 @@ export const LoginScreen = () => {
                 <button
                     type="submit"
                     className="btn btn-primary btn-block"
-                    disabled={loading}
+                    // disabled={loading}
                 >
                     Login
                 </button>
